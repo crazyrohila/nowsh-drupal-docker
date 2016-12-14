@@ -1,7 +1,5 @@
-# A basic apache server. To use either add or bind mount content under /var/www
 FROM ubuntu:14.04
-
-MAINTAINER Kimbro Staken version: 0.1
+MAINTAINER Sanjay Rohila (@crazyrohila)
 
 RUN apt-get update && apt-get install -y git apache2 php5 libapache2-mod-php5 php5-mysql php5-cli php5-gd php5-curl curl && apt-get clean && rm -rf /var/lib/apt/lists/*
 
